@@ -19,6 +19,8 @@ def post_data():
     abstract = request.get_json().get('abstract')
     num_keywords = request.get_json().get('num_keywords')
     
+    num_keywords = num_keywords if num_keywords else 5
+    
     # Predict keywords from the abstract
     keywords = predict_keywords_from_abstract(abstract, min_keywords=num_keywords)
     
