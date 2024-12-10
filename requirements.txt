@@ -4,4 +4,3 @@ pandas
 nltk
 scikit-learn
 imbalanced-learn
-gunicorn==20.1.0
